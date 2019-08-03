@@ -166,7 +166,17 @@
     font-size: 18px;
     word-wrap: break-word;
   }
+  
+  .app-title{
+    text-align: center;
+    margin: 21px 0px;
+  }
 
-  #quizForm{
-    margin-top: 76px;
+  .form-btn{
+    text-align: center;
+    padding: 22px 0px;
+  }
+
+  .form-btn button{
+    width: 38%;
   }

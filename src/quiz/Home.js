@@ -37,7 +37,8 @@ class Home extends Component{
         return(
             <Container>
                 <Row>
-                    <Col md={{span:6, offset:3}} className="p-0">
+                    <Col md={{span:6, offset:3}}>
+                        <h2 className="app-title">React Quiz App</h2>
                         <Form id="quizForm">
                             <Form.Group controlId="name">
                                 <Form.Label>Name</Form.Label>
@@ -63,9 +64,11 @@ class Home extends Component{
                                 <Form.Label>Total Time</Form.Label>
                                 <Form.Control type="text" value = { `${this.props.quizStore.totalTime} minutes` } placeholder="Total Time" readOnly={ true } />
                             </Form.Group>
-                            <Button variant="primary" type="button" onClick = { e =>{ this.props.history.push('/quiz'); }}>
-                                Submit
-                            </Button>
+                            <Form.Group className="form-btn">
+                                <Button variant="outline-primary" type="button" size="md" onClick = { e =>{ this.props.history.push('/quiz'); }}>
+                                    Submit
+                                </Button>
+                            </Form.Group>
                         </Form>
                     </Col>
                 </Row>
